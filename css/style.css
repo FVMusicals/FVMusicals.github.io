@@ -1,0 +1,473 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+body {
+	font-family: 'Cabin', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	
+}
+
+@-webkit-keyframes bounce {
+	from,
+	20%,
+	53%,
+	to {
+	  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  
+	40%,
+	43% {
+	  -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+	  transform: translate3d(0, -30px, 0) scaleY(1.1);
+	}
+  
+	70% {
+	  -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+	  transform: translate3d(0, -15px, 0) scaleY(1.05);
+	}
+  
+	80% {
+	  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+	  transform: translate3d(0, 0, 0) scaleY(0.95);
+	}
+  
+	90% {
+	  -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+	  transform: translate3d(0, -4px, 0) scaleY(1.02);
+	}
+  }
+  @keyframes bounce {
+	from,
+	20%,
+	53%,
+	to {
+	  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+  
+	40%,
+	43% {
+	  -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+	  transform: translate3d(0, -30px, 0) scaleY(1.1);
+	}
+  
+	70% {
+	  -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	  -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+	  transform: translate3d(0, -15px, 0) scaleY(1.05);
+	}
+  
+	80% {
+	  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+	  transform: translate3d(0, 0, 0) scaleY(0.95);
+	}
+  
+	90% {
+	  -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+	  transform: translate3d(0, -4px, 0) scaleY(1.02);
+	}
+  }
+  .animate__bounce {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+  }
+
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header {
+	align-items: center;
+	background: linear-gradient(180deg, rgb(253, 230, 251) 0%, rgba(253, 230, 251, 0) 100%);
+	border: 1px none;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	width: 100%;
+}
+
+.nav1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border: 1px none;
+	gap: 6rem;
+	width: 30%;
+}
+
+.nav1 img {
+	width: 2rem;
+}
+
+.header-link a {
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	width: 200px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.header-link a:hover {
+	margin: 1rem;
+}
+
+.logo {
+	align-self: center;
+	width: 20%;
+	max-width: 300px;
+}
+
+.hdr-main-divider{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+/* HOME PAGE */
+
+main {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+	padding-top: 1%;
+	position: relative;
+}
+
+.img-titre-main1 img {
+	width: 60%;
+}
+
+.img-titre-main2 img {
+	width: 80%;
+}
+
+.personnage-illustration {
+	width: 50%;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personnage-illustration img {
+	width: 60%;
+}
+
+.parallax-home {
+	/* l'image en fond qui sera fixé */
+	background-image: url("../img/piano-illustration.jpg");
+
+	/* la hauteur de l'image */
+	min-height: 40rem; 
+  
+	/* On crée l'effet parallax sur le scroll de la souris */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-flex-home{
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.flex-home {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.home-article {
+	margin: 2rem;
+	padding: 0 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.home-article h1 {
+	font-size: 1.5em;
+}
+
+.home-article p {
+	text-align: justify;
+}
+
+.home-article .photo-illust-CM {
+	width: 50%;
+	border-radius: 3%;
+	margin: 0 auto;
+}
+
+.flex-home-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	margin: 0 auto 6rem;
+}
+
+#flyer-section img {
+	width: 80%;
+	border-radius: 3%;
+}
+
+/* ABOUT US PAGE */
+
+.parallax-aboutUs {
+	/* l'image en fond qui sera fixé */
+	background-image: url("../img/scene-illustration.jpg");
+	opacity: 0.8;
+
+	/* la hauteur de l'image */
+	min-height: 30rem;
+  
+	/* On crée l'effet parallax sur le scroll de la souris */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-aboutUs-2 {
+	/* l'image en fond qui sera fixé */
+	background-image: url("../img/mic-1003559.jpg");
+	opacity: 0.8;
+
+	/* la hauteur de l'image */
+	min-height: 30rem;
+  
+	/* On crée l'effet parallax sur le scroll de la souris */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-aboutUs-3 {
+	/* l'image en fond qui sera fixé */
+	background-image: url("../img/atelier-dessin-illustration.jpg");
+	opacity: 0.8;
+
+	/* la hauteur de l'image */
+	min-height: 30rem;
+  
+	/* On crée l'effet parallax sur le scroll de la souris */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.profile-pic1 {
+	width: 40rem;
+	border-radius: 3%;
+}
+
+.profile-pic2 {
+	width: 40rem;
+	border-radius: 3%;
+}
+
+.profile-pic3 {
+	width: 30rem;
+	border-radius: 3%;
+}
+
+.profile-pictures section {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 5rem auto;
+	width: 100%;
+	gap: 10rem;
+}
+
+.profile-pictures h1 {
+	font-size: 2em;
+	font-family: 'Redressed', cursive;
+	margin-top: 0;
+}
+
+.profile-description {
+	text-align: justify;
+	width: 50%;
+}
+
+.pierre-description {
+	margin: 20rem auto 20rem !important;
+}
+
+.marwa-description {
+	display: flex !important;
+	margin: 20rem auto 20rem !important;
+	gap: 5rem !important;
+}
+
+/* nos-CM PAGE */
+
+.youtube-player {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 10rem auto 20rem;
+	gap: 5rem;
+	width: 100%;
+}
+
+.cm-desription h1 {
+	margin-top: 0;
+}
+
+.youtube-player h1 {
+	text-decoration: underline;
+}
+
+.youtube-player p {
+	width: 76rem;
+	text-align: justify;
+	margin-bottom: 5rem;
+}
+
+.youtube-player iframe {
+	margin-bottom: 5rem;
+}
+
+/* PAGE NOUS CONTACTER */
+
+.nous-contacter {
+	min-height: 40rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nous-contacter h1 {
+	text-decoration: underline;
+}
+
+.mail-bold {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#myInput {
+	display: none;
+}
+
+#copyMailButton {
+	cursor: pointer;
+	border: none;
+	font-family: 'Cabin', sans-serif;
+	height: 3rem;
+}
+
+#copyMailButton:hover {
+	border: 0.5px solid rgba(79,41,71,0.8);
+}
+
+.parallax-contact {
+	/* l'image en fond qui sera fixé */
+	background-image: url("../img/mic-1003559.jpg");
+
+	/* la hauteur de l'image */
+	min-height: 50rem;
+  
+	/* On crée l'effet parallax sur le scroll de la souris */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pointer-button {
+	width: 1.8rem;
+	margin-top: 0.5rem;
+	color: white;
+}
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+/* The actual popup */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
