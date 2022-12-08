@@ -8,7 +8,14 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	background-color: white;
-	
+}
+
+a {
+	color: #2D7EB5;
+}
+
+a:visited {
+	color: #2D7EB5;
 }
 
 @-webkit-keyframes bounce {
@@ -123,7 +130,7 @@ header {
 	color: black;
 	padding: 10px;
 	border-radius: 5px;
-	width: 200px;
+	width: 12.5rem;
 	text-transform: uppercase;
 	font-weight: bolder;
 }
@@ -338,24 +345,28 @@ main {
 	margin: 10rem auto 20rem;
 	gap: 5rem;
 	width: 100%;
+	padding: 2rem;
+}
+
+.cm-desription {
+	width: fit-content;
 }
 
 .cm-desription h1 {
 	margin-top: 0;
-}
-
-.youtube-player h1 {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .youtube-player p {
-	width: 76rem;
+	max-width: 80rem;
 	text-align: justify;
 	margin-bottom: 5rem;
 }
 
-.youtube-player iframe {
+.youtube-frame iframe {
 	margin-bottom: 5rem;
+	max-width: 85rem;
+	max-height: 58rem;
 }
 
 /* PAGE NOUS CONTACTER */
@@ -471,3 +482,214 @@ main {
 
 /* FOOTER */
 /* Ce qui concerne le footer */
+
+
+/* Media Queries */
+
+
+/* Laptop screen adaptation */
+@media screen and (max-width: 1600px) {
+	
+	/* Header */
+
+	.nav1 {
+		width: fit-content;
+	}
+
+	.hdr-main-divider {
+		margin-bottom: 6rem;
+	}
+
+	.hdr-main-divider img {
+		max-width: 80%;
+	}
+	
+	/* Page à propos de nous */
+
+	.marwa-description {
+		gap: 2rem !important;
+		padding: 0 2rem;
+	}
+
+	.marwa-description .profile-description p, .marwa-description .profile-description h1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.marwa-description .profile-description {
+		padding-right: 0;
+	}
+
+	/* Page nos CM */
+
+	.youtube-player {
+		padding: 0 2rem;
+	}
+
+	.youtube-frame iframe {
+		width: 60rem;
+		height: 40rem;
+	}
+}
+
+/* Tablet screen adaptation */
+
+@media screen and (max-width: 1100px) {
+
+	/* Header */
+	.nav1 {
+		gap: 2rem;
+	}
+
+	.nav1 a:hover {
+		margin: 0;
+	}
+
+	/* About us page */
+
+	.profile-pictures section {
+		padding: 0 2rem;
+		gap: 3rem;
+	}
+
+	.pierre-description {
+		gap: 5rem !important;
+	}
+
+	.marwa-description {
+		flex-direction: column;
+		align-items: center !important;
+		margin-top: 10rem !important;
+	}
+
+	/* Nos CM */
+
+	.youtube-player {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5rem;
+	}
+
+	.youtube-frame iframe {
+		width: 80rem;
+		height: 50rem;
+	}
+
+}
+
+/* Mobile screen adaptation */
+
+@media screen and (max-width: 760px) {
+	/* Header */
+
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 5rem;
+	}
+
+	.nav1 {
+		align-items: center;
+	}
+
+	.logo {
+		width: 45%;
+	}
+
+	/* Home page */
+
+	.flex-home {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.home-article {
+		width: 80%;
+	}
+
+	.img-titre-main1 img {
+		width: 100%;
+	}
+
+	.img-titre-main2 img {
+		width: 35rem;
+		margin-left: -2rem;
+	}
+
+	.personnage-illustration {
+		width: 100%;
+	}
+
+	.main-flex-home section:nth-child(2) {
+		flex-direction: column-reverse;
+		margin-top: 5rem;
+	}
+
+	#flyer-section h1 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	#flyer-section img {
+		width: 100%;
+	}
+
+
+	/* About us Page */
+	.profile-pictures section {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		margin-top: 0;
+	}
+
+	.profile-description {
+		width: 80%;
+	}
+
+	.pierre-description {
+		margin-top: 8rem !important;
+		margin-bottom: 8rem !important;
+	}
+
+	.marwa-description {
+		margin-top: 8rem !important;
+		margin-bottom: 8rem !important;
+	}
+
+	.profile-pic2 {
+		max-width: 30rem;
+	}
+
+	.profile-pic1 {
+		max-width: 30rem;
+	}
+
+	/* Nos CM */
+
+	.youtube-player {
+		gap: 1rem;
+		margin-top: 0;
+		margin-bottom: 4.5rem;
+	}
+
+	.youtube-frame iframe {
+		max-width: 35rem;
+		max-height: 25rem;
+	}
+
+	/* Nous Contacter */
+
+	.nous-contacter {
+		margin-top: 0;
+	}
+	
+	.nous-contacter p {
+		width: 80%;
+		margin: 0 auto 2rem;
+	}
+
+	.mail-bold {
+		text-align: center;
+	}
+}
