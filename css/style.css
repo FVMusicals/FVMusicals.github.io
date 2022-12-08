@@ -135,6 +135,10 @@ header {
 	font-weight: bolder;
 }
 
+.mobile-cm-link {
+	display: none;
+}
+
 .header-link a:hover {
 	margin: 1rem;
 }
@@ -590,6 +594,14 @@ main {
 
 	.nav1 {
 		align-items: center;
+	}
+
+	.mobile-cm-link {
+		display: block;
+	}
+
+	.desktop-cm-link {
+		display: none;
 	}
 
 	.logo {
