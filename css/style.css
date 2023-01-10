@@ -377,7 +377,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 0 3rem;
+	margin: 0 15rem;
 	max-width: 50%;
 }
 
@@ -545,6 +545,9 @@ main {
 	.youtube-frame iframe {
 		width: 60rem;
 		height: 40rem;
+	}
+	.fiche-technique {
+		margin: 0 2rem;
 	}
 }
 
