@@ -346,7 +346,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	margin: 10rem auto 20rem;
+	margin: 10rem auto 0;
 	gap: 5rem;
 	width: 100%;
 	padding: 2rem;
@@ -371,6 +371,18 @@ main {
 	margin-bottom: 5rem;
 	max-width: 85rem;
 	max-height: 58rem;
+}
+
+.fiche-technique {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 3rem;
+	max-width: 50%;
+}
+
+.fiche-technique ul {
+	padding-inline-start: 1.8rem;
 }
 
 /* PAGE NOUS CONTACTER */
@@ -579,6 +591,12 @@ main {
 		height: 50rem;
 	}
 
+	.fiche-technique {
+		max-width: 80rem;
+		align-items: center;
+		margin: 0 auto;
+	}
+
 }
 
 /* Mobile screen adaptation */
@@ -688,6 +706,10 @@ main {
 	.youtube-frame iframe {
 		max-width: 35rem;
 		max-height: 25rem;
+	}
+
+	.fiche-technique {
+		max-width: 35rem;
 	}
 
 	/* Nous Contacter */
