@@ -345,7 +345,7 @@ main {
 .youtube-player {
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: flex-end;
 	margin: 10rem auto 0;
 	gap: 5rem;
 	width: 100%;
@@ -361,6 +361,24 @@ main {
 	text-decoration: none;
 }
 
+.video-indicator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.video-indicator p {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: left !important;
+	text-decoration: underline;
+}
+
+.video-indicator img {
+	width: 12rem;
+}
+
 .youtube-player p {
 	max-width: 80rem;
 	text-align: justify;
@@ -370,7 +388,7 @@ main {
 .youtube-frame iframe {
 	margin-bottom: 5rem;
 	max-width: 85rem;
-	max-height: 58rem;
+	max-height: 43rem;
 }
 
 .fiche-technique {
@@ -582,6 +600,14 @@ main {
 	}
 
 	/* Nos CM */
+
+	.video-indicator p {
+		margin: 0;
+	}
+
+	.video-indicator img {
+		display: none;
+	}
 
 	.youtube-player {
 		flex-direction: column;
